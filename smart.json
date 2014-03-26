@@ -1,0 +1,9 @@
+{
+  "name": "getimage",
+  "description": "Get a users image from webcam and save it their profile.",
+  "homepage": "https://github.com/foxdog-studios/meteor-getimage",
+  "author": "Lloyd Henning <eldog@foxdogstudios.com> (http://foxdogstudios.com)",
+  "version": "0.0.1",
+  "git": "https://github.com/foxdog-studios/meteor-getimage",
+  "packages": {}
+}

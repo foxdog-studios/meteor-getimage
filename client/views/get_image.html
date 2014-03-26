@@ -1,0 +1,29 @@
+<template name="getImage">
+  <div class="get-image">
+    <img id="turnip" src="turnip.jpg" style="display: none;"/>
+    {{#if hasGetUserMedia}}
+      {{#if photograph}}
+        <button class="btn" name="retake">Retake</button>
+        <button class="btn btn-success" name="ok">OK</button>
+        <img src="{{photograph}}">
+      {{else}}
+        <p class="text-center muted">
+          Click/touch to take your photo
+          <button class="btn" name="turnip">
+            Don't take my photo - make me an anonymous turnip instead
+          </button>
+        </p>
+      {{/if}}
+    {{else}}
+      <p class="text-center text-error">Sorry, we could not access your webcam.
+        <button class="btn btn-success" name="turnip-ok">
+          You can be turnip though!
+        </button>
+      </p>
+    {{/if}}
+    {{#constant}}
+      <video autoplay></video>
+    {{/constant}}
+  </div>
+</template>
+
